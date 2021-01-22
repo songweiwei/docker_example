@@ -4,6 +4,7 @@ MAINTAINER songwei "1194488130@qq.com"
 COPY . /
 WORKDIR /
 #EXPOSE 5000
+RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 CMD python main.py
 #sudo docker run --runtime=nvidia -it -p 5000:5000 hmai:g7_server_v7
