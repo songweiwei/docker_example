@@ -4,6 +4,7 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 import jieba
+from config import port
 
 from flask import Flask
 
@@ -16,5 +17,5 @@ def hello_world():
 
 
 if __name__ == '__main__':
-    app.run(port=5000)
+    app.run(port=port)
 
