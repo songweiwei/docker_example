@@ -3,7 +3,7 @@ MAINTAINER songwei "1194488130@qq.com"
 # hmai:g7_server_v7
 COPY . /
 WORKDIR /
-#EXPOSE 5000
+EXPOSE 5000
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 CMD python main.py
