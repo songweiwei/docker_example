@@ -5,14 +5,16 @@
 
 import jieba
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-    print(jieba.cut('我很爱你'))
+from flask import Flask
+
+app = Flask(__name__)
 
 
-# Press the green button in the gutter to run the script.
+@app.route('/')
+def hello_world():
+    return 'Hello World!'
+
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    app.run(port=5000)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
